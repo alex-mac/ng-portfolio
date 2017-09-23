@@ -33,13 +33,26 @@ export class ProjectsListComponent implements OnInit {
 			], 
 			"c", 
 			"https://scorecard.fb.org/home"),
-		new Project("a", [], "c", "https://scorecard.fb.org/home"),
-		new Project("a", [], "c", "https://scorecard.fb.org/home"),
 	];
+
+	title: string = "fdfd";
+	description: string = "fff";
+	url: string = "ddd";
 
 	constructor() { }
 
 	ngOnInit() {
-  }
+  	}
+
+  	showDetails (title: string, desc: string, url: string) {
+  		this.title = title;
+  		this.description = desc;
+  		this.url = url;
+  		this.toggleVisibility("flex");
+  	}
+
+  	toggleVisibility (state: string = "none") {
+  		document.getElementById("project-details-overlay").style.display = state;
+  	}
 
 }

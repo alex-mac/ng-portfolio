@@ -1,9 +1,17 @@
-<div class="project card" tabindex="0" *ngFor="let project of projects">
+<div class="project card" tabindex="0" *ngFor="let project of projects" (click)="showDetails(project.name, project.description, project.url)">
     <div class="project-details">
         <h2>{{ project.name }}</h2>
-        <hr>
-        <br>
-        <p>{{ project.description }}</p>
-        <!-- <p data-source="{{ $source }}" *ngFor="let project of projects">{{ $point }}</p> -->
     </div>
+</div>
+
+<div id="project-details-overlay">
+	<button (click)="toggleVisibility()">
+		<i class="fa fa-times fa-3x" aria-hidden="true"></i>
+	</button>
+	<div id="container">
+		<h3>{{ title }}</h3>
+		<hr />
+		<p>{{ description }}</p>
+		<p>{{ url }}</p>
+	</div>
 </div>

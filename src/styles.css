@@ -5,6 +5,7 @@ html, body {
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 h1, h2 {

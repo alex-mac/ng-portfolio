@@ -14,6 +14,44 @@
     cursor: pointer;
 }
 
+#project-details-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253,253,253);
+}
+
+#project-details-overlay > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    background: none;
+    border: none;
+}
+
+#project-details-overlay > button:hover {
+    color: blue;
+}
+
+#project-details-overlay > #container  {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+#project-details-overlay > #container > h3 {
+    font-size: 40px;
+}
+
 @media screen and (min-width: 750px) {
     .projects {
         display: flex;
