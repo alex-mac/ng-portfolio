@@ -1,3 +1,9 @@
-<p>
-  projects-list works!
-</p>
+<div class="project card" tabindex="0" *ngFor="let project of projects">
+    <div class="project-details">
+        <h2>{{ project.name }}</h2>
+        <hr>
+        <br>
+        <p>{{ project.description }}</p>
+        <!-- <p data-source="{{ $source }}" *ngFor="let project of projects">{{ $point }}</p> -->
+    </div>
+</div>

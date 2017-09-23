@@ -1,0 +1,6 @@
+#projects {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

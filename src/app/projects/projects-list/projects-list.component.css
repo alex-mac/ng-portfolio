@@ -1,0 +1,38 @@
+.project {
+    margin: 1rem;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+.project h2 {
+    text-align: center;
+}
+
+.project:hover, .project:focus {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .project {
+        width: calc(50% - 60px );
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+.project-details {
+    margin: 20px;
+    padding: 20px;
+}
