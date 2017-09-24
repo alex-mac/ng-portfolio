@@ -123,12 +123,21 @@
     align-items: center;
 }
 
+.technologies {
+    margin: 20px;
+    padding: 20px;
+}
+
 #joe-coffee .project-image {
     background-color: #f1556c;
 }
 
 #farm-bureau .project-image {
-    background: url('/assets/scorecard.png');
+    background: url('/assets/scorecard.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #simms-fishing .project-image {
