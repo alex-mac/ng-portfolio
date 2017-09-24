@@ -3,4 +3,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
 }

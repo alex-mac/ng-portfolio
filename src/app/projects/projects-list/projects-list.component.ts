@@ -10,6 +10,8 @@ export class ProjectsListComponent implements OnInit {
 	projects: Project[] = [
 		new Project(
 			"Joe Coffee", 
+			"joe-coffee",
+			"assets/joe-coffee-app.png",
 			[
 				'Developed business logic that shows users nearby coffee shops, sorted from nearest to furthest.', 
                 'Developed and quality tested the end-to-end user experience.', 
@@ -19,6 +21,8 @@ export class ProjectsListComponent implements OnInit {
 			"http://joecoffeeapp.com/"),
 		new Project(
 			"Farm Bureau", 
+			"farm-bureau",
+			"",
 			[
 				'Programmed the front end as well as the api architecture and integration.', 
                 'Regular meetings with client to explain time projections, hurdles, etc.'
@@ -27,6 +31,8 @@ export class ProjectsListComponent implements OnInit {
             "https://scorecard.fb.org/home"),
 		new Project(
 			"Simms Fishing", 
+			"simms-fishing",
+			"assets/simms-fishing.png",
 			[
 				'Implemented core templates and front end logic within the Magento 2 framework.', 
             	'Styled components according to client submitted designs.'
