@@ -9,16 +9,14 @@ import { Project } from '../project.model';
 export class ProjectsListComponent implements OnInit {
 	projects: Project[] = [
 		new Project(
-			"Joe Coffee", 
-			"joe-coffee",
-			"assets/joe-coffee-app.png",
+			"Simms Fishing", 
+			"simms-fishing",
+			"assets/simms-fishing.png",
 			[
-				'Developed business logic that shows users nearby coffee shops, sorted from nearest to furthest.', 
-                'Developed and quality tested the end-to-end user experience.', 
-                'I primarily worked on the front end business logic'
-            ], 
-			"c", 
-			"http://joecoffeeapp.com/"),
+				'Implemented core templates and front end logic within the Magento 2 framework.', 
+            	'Styled components per client submitted designs.'
+			], 
+			"https://scorecard.fb.org/home"),
 		new Project(
 			"Farm Bureau", 
 			"farm-bureau",
@@ -27,38 +25,26 @@ export class ProjectsListComponent implements OnInit {
 				'Programmed the front end as well as the api architecture and integration.', 
                 'Regular meetings with client to explain time projections, hurdles, etc.'
             ], 
-            "c", 
             "https://scorecard.fb.org/home"),
 		new Project(
-			"Simms Fishing", 
-			"simms-fishing",
-			"assets/simms-fishing.png",
+			"Joe Coffee", 
+			"joe-coffee",
+			"assets/joe-coffee-app.png",
 			[
-				'Implemented core templates and front end logic within the Magento 2 framework.', 
-            	'Styled components according to client submitted designs.'
-			], 
-			"c", 
-			"https://scorecard.fb.org/home"),
+				'Developed business logic that shows users nearby coffee shops, sorted from nearest to furthest.', 
+                'Developed and quality tested the end-to-end user experience.', 
+                'I primarily worked on the front end business logic'
+            ], 
+			"http://joecoffeeapp.com/"),
 	];
-
-	title: string = "fdfd";
-	description: string = "fff";
-	url: string = "ddd";
 
 	constructor() { }
 
 	ngOnInit() {
   	}
 
-  	showDetails (title: string, desc: string, url: string) {
-  		this.title = title;
-  		this.description = desc;
-  		this.url = url;
-  		this.toggleVisibility("flex");
-  	}
-
-  	toggleVisibility (state: string = "none") {
-  		document.getElementById("project-details-overlay").style.display = state;
+  	openProject(url: string) {
+  		window.open(url);  			
   	}
 
 }

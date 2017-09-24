@@ -1,20 +1,17 @@
-<div class="project card" id="{{project.id}}" tabindex="0" *ngFor="let project of projects" (click)="showDetails(project.name, project.description, project.url)">
+<div class="project card" id="{{project.id}}" tabindex="0" *ngFor="let project of projects" (click)="openProject(project.projectUrl)">
     <div class="project-details">
     	<div class="project-image">
 			<span><img class="logo logo-{{ project.showLogo }}" alt="logo"  src="{{ project.logoPath }} "><h2>{{ project.name }}</h2></span>
     	</div>
     	<div class="technologies">
-    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    		<ul *ngFor="let point of project.description">
+                <li>{{ point }}</li>      
+            </ul>
     	</div>
     </div>
 </div>
 
-<div id="project-details-overlay">
+<!-- <div id="project-details-overlay">
 	<button (click)="toggleVisibility()">
 		<i class="fa fa-times fa-3x" aria-hidden="true"></i>
 	</button>
@@ -25,3 +22,4 @@
 		<p>{{ url }}</p>
 	</div>
 </div>
+ -->
