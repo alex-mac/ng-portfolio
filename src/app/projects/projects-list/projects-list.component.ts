@@ -13,8 +13,8 @@ export class ProjectsListComponent implements OnInit {
 			"simms-fishing",
 			"assets/simms-fishing.png",
 			[
-				'Implemented core templates and front end logic in Magento 2.', 
-            	'Implement client provided designs in Magento 2.',
+				"Implemented core templates and front end logic in Magento 2.", 
+            	"Implement client provided designs in Magento 2.",
             	"Update existing functionality in PHP and Magento 1.9",
             	"Fix existing bugs on both the front end and the backend",
 
@@ -35,9 +35,9 @@ export class ProjectsListComponent implements OnInit {
 			"joe-coffee",
 			"assets/joe-coffee-app.png",
 			[
-				'Developed business logic that shows users nearby coffee shops, sorted from nearest to furthest.', 
-                'Developed and quality tested the end-to-end user experience.', 
-                'I primarily worked on the front end business logic'
+				"Developed business logic that shows users nearby coffee shops, sorted from nearest to furthest.", 
+                "Developed and quality tested the end-to-end user experience.", 
+                "I primarily worked on the front end business logic"
             ], 
 			"http://joecoffeeapp.com/"),
 		new Project(
