@@ -16,7 +16,7 @@ export class ProjectsListComponent implements OnInit {
 				'Implemented core templates and front end logic within the Magento 2 framework.', 
             	'Styled components per client submitted designs.'
 			], 
-			"https://scorecard.fb.org/home"),
+			"https://simmsfishing.com"),
 		new Project(
 			"Farm Bureau", 
 			"farm-bureau",
