@@ -34,20 +34,6 @@ h1, h2 {
     margin-bottom: 30px;
 }
 
-#banner-image {
-    height: 350px;
-    background: url('https://www.muji.eu/IMG/MOD/UK/SEC_11.jpg') no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    padding: 80px 0;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-}
-
 .container {
     max-width: 1200px;
     padding: 20px;
@@ -63,18 +49,6 @@ h1, h2 {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-
-.intro {
-    margin: 80px 0;
-    padding: 0 20px;
-}
-
-#intro-text {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 #output {
